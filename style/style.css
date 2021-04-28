@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+Dark gray: hsl(0, 0%, 59%)
+*/
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --color-p-dark-cyan: hsl(185, 75%, 39%);
+  --color-p-v-dark-blue: hsl(229, 23%, 23%);
+  --color-p-grayish-blue: hsl(227, 10%, 46%);
+  --color-n: hsl(0, 0%, 59%);
+  background-color: var(--color-p-dark-cyan);
+  height: 100vh;
+  overflow: hidden;
+}
+.svg {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+}
+.top {
+  top: -188px;
+  left: -167px;
+}
+.bottom {
+  bottom: -98px;
+  right: -44%;
+}
+.card {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  z-index: 222;
+}
+header {
+  margin-bottom: 0%;
+}
+header img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.profile-pic {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  align-self: baseline;
+  margin: -48px auto auto;
+  border: #fff solid 5px;
+}
+.info-text {
+  padding: 2rem;
+  font-size: 1rem;
+}
+.name {
+  font-weight: 700;
+  display: inline-block;
+}
+span,
+.info-text .city {
+  color: var(--color-n);
+  font-weight: 400;
+}
+.city {
+  margin-top: 10px;
+}
+hr {
+  height: 1px;
+  background-color: hsla(0, 0%, 59%, 0.39);
+  border: none;
+}
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.94rem;
+}
+span {
+  font-weight: 400;
+  margin-top: 2px;
+  font-size: 00.8rem;
+}
+@media only screen and (min-width: 400px) {
+  .card {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .card {
+    width: 30%;
+  }
+  .top {
+    top: -85%;
+    left: -25%;
+  }
+  .bottom {
+    bottom: -105%;
+    right: -25%;
+  }
+}
